@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BFA3661D5CC16AF5BEF16B7 /* Pods_Memoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EFC98DC4D7065CB42B1A14 /* Pods_Memoria.framework */; };
+		C9710B681F7165D300D5F85D /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9710B671F7165D300D5F85D /* TaskTableViewCell.swift */; };
+		C991AED11F71B078004EC969 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = C991AED01F71B078004EC969 /* Resources.swift */; };
+		C99814861F71250A00ED5743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99814851F71250A00ED5743 /* AppDelegate.swift */; };
+		C99814881F71250A00ED5743 /* TodoListsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99814871F71250A00ED5743 /* TodoListsVC.swift */; };
+		C998148B1F71250A00ED5743 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99814891F71250A00ED5743 /* Main.storyboard */; };
+		C998148D1F71250A00ED5743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C998148C1F71250A00ED5743 /* Assets.xcassets */; };
+		C99814901F71250A00ED5743 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C998148E1F71250A00ED5743 /* LaunchScreen.storyboard */; };
+		C99814A61F71474500ED5743 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99814A51F71474500ED5743 /* Task.swift */; };
+		C99814A81F714A8500ED5743 /* NewNoteCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99814A71F714A8500ED5743 /* NewNoteCreationViewController.swift */; };
+		C99814AB1F714BDF00ED5743 /* UIView+Memoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99814AA1F714BDF00ED5743 /* UIView+Memoria.swift */; };
+		C99814AD1F7152D400ED5743 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99814AC1F7152D400ED5743 /* DatabaseService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C99814A41F71472800ED5743 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		18EFC98DC4D7065CB42B1A14 /* Pods_Memoria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memoria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		594E7358556B45FE778F10F8 /* Pods-Memoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memoria.release.xcconfig"; path = "Pods/Target Support Files/Pods-Memoria/Pods-Memoria.release.xcconfig"; sourceTree = "<group>"; };
+		A12EE90970F0AB402C015B49 /* Pods-Memoria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memoria.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Memoria/Pods-Memoria.debug.xcconfig"; sourceTree = "<group>"; };
+		C9710B671F7165D300D5F85D /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		C991AED01F71B078004EC969 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		C99814821F71250A00ED5743 /* Memoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C99814851F71250A00ED5743 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C99814871F71250A00ED5743 /* TodoListsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListsVC.swift; sourceTree = "<group>"; };
+		C998148A1F71250A00ED5743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C998148C1F71250A00ED5743 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C998148F1F71250A00ED5743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C99814911F71250A00ED5743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C99814A51F71474500ED5743 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		C99814A71F714A8500ED5743 /* NewNoteCreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewNoteCreationViewController.swift; sourceTree = "<group>"; };
+		C99814AA1F714BDF00ED5743 /* UIView+Memoria.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Memoria.swift"; sourceTree = "<group>"; };
+		C99814AC1F7152D400ED5743 /* DatabaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C998147F1F71250A00ED5743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BFA3661D5CC16AF5BEF16B7 /* Pods_Memoria.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34F0A8C24C09FE719D8788A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A12EE90970F0AB402C015B49 /* Pods-Memoria.debug.xcconfig */,
+				594E7358556B45FE778F10F8 /* Pods-Memoria.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9710B661F7165AF00D5F85D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9710B671F7165D300D5F85D /* TaskTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C99814791F71250A00ED5743 = {
+			isa = PBXGroup;
+			children = (
+				C99814841F71250A00ED5743 /* Memoria */,
+				C99814831F71250A00ED5743 /* Products */,
+				34F0A8C24C09FE719D8788A2 /* Pods */,
+				EE0A208E1DE46F065563D9FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C99814831F71250A00ED5743 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C99814821F71250A00ED5743 /* Memoria.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C99814841F71250A00ED5743 /* Memoria */ = {
+			isa = PBXGroup;
+			children = (
+				C99814971F71252000ED5743 /* ViewControllers */,
+				C9710B661F7165AF00D5F85D /* Views */,
+				C99814991F71253B00ED5743 /* Storyboards */,
+				C998149A1F71255800ED5743 /* Resources */,
+				C998149B1F71256A00ED5743 /* Helpers */,
+				C99814981F71252E00ED5743 /* Database */,
+				C99814A91F714BBF00ED5743 /* Extensions */,
+			);
+			path = Memoria;
+			sourceTree = "<group>";
+		};
+		C99814971F71252000ED5743 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C99814871F71250A00ED5743 /* TodoListsVC.swift */,
+				C99814A71F714A8500ED5743 /* NewNoteCreationViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C99814981F71252E00ED5743 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				C99814A51F71474500ED5743 /* Task.swift */,
+				C99814AC1F7152D400ED5743 /* DatabaseService.swift */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		C99814991F71253B00ED5743 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C998148E1F71250A00ED5743 /* LaunchScreen.storyboard */,
+				C99814891F71250A00ED5743 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C998149A1F71255800ED5743 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C998148C1F71250A00ED5743 /* Assets.xcassets */,
+				C991AED01F71B078004EC969 /* Resources.swift */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C998149B1F71256A00ED5743 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C99814851F71250A00ED5743 /* AppDelegate.swift */,
+				C99814911F71250A00ED5743 /* Info.plist */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		C99814A91F714BBF00ED5743 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C99814AA1F714BDF00ED5743 /* UIView+Memoria.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		EE0A208E1DE46F065563D9FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18EFC98DC4D7065CB42B1A14 /* Pods_Memoria.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C99814811F71250A00ED5743 /* Memoria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C99814941F71250A00ED5743 /* Build configuration list for PBXNativeTarget "Memoria" */;
+			buildPhases = (
+				961448E46054BE7CC66C47BD /* [CP] Check Pods Manifest.lock */,
+				C998147E1F71250A00ED5743 /* Sources */,
+				C998147F1F71250A00ED5743 /* Frameworks */,
+				C99814801F71250A00ED5743 /* Resources */,
+				C99814A41F71472800ED5743 /* Embed Frameworks */,
+				80784CEC2DAFB6257CB5619C /* [CP] Embed Pods Frameworks */,
+				3CDE8BE28611789C9A03A223 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Memoria;
+			productName = Memoria;
+			productReference = C99814821F71250A00ED5743 /* Memoria.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C998147A1F71250A00ED5743 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Vishal;
+				TargetAttributes = {
+					C99814811F71250A00ED5743 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C998147D1F71250A00ED5743 /* Build configuration list for PBXProject "Memoria" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C99814791F71250A00ED5743;
+			productRefGroup = C99814831F71250A00ED5743 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C99814811F71250A00ED5743 /* Memoria */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C99814801F71250A00ED5743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99814901F71250A00ED5743 /* LaunchScreen.storyboard in Resources */,
+				C998148D1F71250A00ED5743 /* Assets.xcassets in Resources */,
+				C998148B1F71250A00ED5743 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CDE8BE28611789C9A03A223 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Memoria/Pods-Memoria-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80784CEC2DAFB6257CB5619C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Memoria/Pods-Memoria-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Memoria/Pods-Memoria-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		961448E46054BE7CC66C47BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Memoria-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C998147E1F71250A00ED5743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9710B681F7165D300D5F85D /* TaskTableViewCell.swift in Sources */,
+				C99814AD1F7152D400ED5743 /* DatabaseService.swift in Sources */,
+				C99814881F71250A00ED5743 /* TodoListsVC.swift in Sources */,
+				C99814AB1F714BDF00ED5743 /* UIView+Memoria.swift in Sources */,
+				C99814A61F71474500ED5743 /* Task.swift in Sources */,
+				C991AED11F71B078004EC969 /* Resources.swift in Sources */,
+				C99814A81F714A8500ED5743 /* NewNoteCreationViewController.swift in Sources */,
+				C99814861F71250A00ED5743 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C99814891F71250A00ED5743 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C998148A1F71250A00ED5743 /* Base */,
+			);
+			name = Main.storyboard;
+			path = Memoria;
+			sourceTree = "<group>";
+		};
+		C998148E1F71250A00ED5743 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C998148F1F71250A00ED5743 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = Memoria;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C99814921F71250A00ED5743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C99814931F71250A00ED5743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C99814951F71250A00ED5743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A12EE90970F0AB402C015B49 /* Pods-Memoria.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Memoria/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Vishal.Memoria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		C99814961F71250A00ED5743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 594E7358556B45FE778F10F8 /* Pods-Memoria.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Memoria/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Vishal.Memoria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C998147D1F71250A00ED5743 /* Build configuration list for PBXProject "Memoria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C99814921F71250A00ED5743 /* Debug */,
+				C99814931F71250A00ED5743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C99814941F71250A00ED5743 /* Build configuration list for PBXNativeTarget "Memoria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C99814951F71250A00ED5743 /* Debug */,
+				C99814961F71250A00ED5743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C998147A1F71250A00ED5743 /* Project object */;
+}
